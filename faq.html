@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5
+	KPIE Techno!ogies | +2347035705023
+	
+-->
+<html>
+	<head>
+		<title>TULE: Transport Service &amp; Delivery Services</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<!--
+			<link rel="stylesheet" href="assets/css/main.css" />
+		-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- App General nav Bar -->
+		<link rel="stylesheet" type="text/css" href="app/css/boot.css"/>
+		<link href="app/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="app/css/style.css"/>
+		<link href="app/css/navbar-fixed-top.css" rel="stylesheet">
+		
+		<script type="text/javascript"> 
+       function hideLoading() { 
+            document.getElementById('divLoading').style.display = "none"; 
+            document.getElementById('divFrameHolder').style.display = "block"; 
+        } 
+		</script> 
+		
+	</head>
+	<body class="is-loading">
+	<nav class="navbar navbar-default navbar-fixed-top navbar-md">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle sidebar-toggle left-menu-bar-btn"> 
+               <span class="icon-bar">
+               </span> 
+               <span class="icon-bar">
+               </span> 
+               <span class="icon-bar">
+               </span> </button> <a href="index.html" class="transition"> <button type="button" class="navbar-toggle search-btn-onclick"> 
+               <span class="glyphicon glyphicon-search">
+               </span> </button> </a> 
+               <span class="navbar-brand" href="#"><img src="app/img/brand.png" class="img-responsive logo"/>
+               </span> 
+               <div class="dropdown pull-right"> </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav"> </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="sidebar-overlay"></div>
+      <aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+         <div> <img src="app/img/brand-black.png" class="img-responsive left-logo"/> </div>
+         <ul class="nav sidebar-nav">
+            <li> <a href="faq.html" class="transition"> 
+               <span class="glyphicon glyphicon-gender-unknown">
+               </span>&nbsp; FAQs </a> 
+            </li>
+            <li> <a href="customer-support.html" data-target=""> 
+               <span class="glyphicon glyphicon-earphone">
+               </span>&nbsp; Contact Us </a> 
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-car-hov">
+               </span>&nbsp; Book Taxi<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="get-a-cab.html" class="transition">Get a Cab</a></li>
+                  <li><a href="hire-a-car.html" class="transition">Hire a Car</a></li>
+                  <li><a href="payment.html" class="transition">Cashless Payment</a></li>
+                  
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-vases">
+               </span>&nbsp; Goods Delivery<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="delivery-service.html" class="transition">Make Request</a></li>
+                  <li><a href="payment.html" class="transition">Cashless Payment</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-question-user-ban">
+               </span>&nbsp; Drivers<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="register-as-driver.html" class="transition">Register</a></li>
+				  <li><a href="find-passengers.html" class="transition">Find Passengers</a></li>
+				  <li><a href="drivers-account-area.html" class="transition">Account Area</a></li>
+               </ul>
+            </li>
+			<li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-car-hov">
+               </span>&nbsp; Main Menu<b class="caret"></b></a>
+				<ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="started.html" class="transition">Main Menu</a></li>
+				</ul>
+			 </li>
+         </ul>
+      </aside>
+		<form id="form1" runat="server"> 
+						<div id="divLoading"> 
+							<img src="images/avatar.jpg" alt="" /> 
+						</div> 
+						<div id="divFrameHolder" style="display:none"> 
+				<iframe src="http://tuletaxi.com/faq/" onload="hideLoading()" frameborder="0" width="100%" height="550px"> 
+							
+				</iframe>
+
+		
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+	<script src="app/js/jquery.min.js"></script> 
+      <script src="app/js/custom.js"></script> 
+      <script src="app/js/bootstrap.min.js"></script>
+</html>
