@@ -1,112 +1,39 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5
-	KPIE Techno!ogies | +2347035705023
-	
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>TULE: Transport Service &amp; Delivery Services</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+  <head>
+    <title>Booking.executeScript Example</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							
-							<h2 style="color:green"><a href="index.html">Choose Option</a></h2>
-							
-						</header>
-						
-						<div>
-							<p>
-								<a href="http://www.booking.tuletaxi.com" target="_blank"><img src="images/get-cab.jpg" alt="" /></a><br>
-								<a href="hire-a-car.html"><img src="images/hire-car.jpg" alt="" /></a><br>
-								<a href="delivery-service.html"><img src="images/delivery.jpg" alt="" /></a><br>
-								<a href="choose-a-service.html"><img src="images/our-services.jpg" alt="" /></a><br>
-								<a href="passengers-account-area.html"><img src="images/my-account-area2.jpg" alt="" /></a><br>
-								<a href="customer-support.html"><img src="images/customer-support.jpg" alt="" /></a><br>
-								
-							</p>
-							<p style="color:red" align="right"><a href="https://play.google.com/store/apps/details?id=com.KpieTechnologiesApp.Tule">Rate this App!</a></p>
-						</div>
-							
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						
-						<!--
-						<footer>
-							<ul class="icons">
-								<li><a href="https://twitter.com/tuletaxi" class="fa-twitter">Twitter</a></li>
-								<li><a href="#" class="fa-instagram">Instagram</a></li>
-								<li><a href="https://facebook.com/tuletaxi" class="fa-facebook">Facebook</a></li>
-							</ul>
-						</footer>
-						-->
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; <a href="http://tuletaxi.com/">2017 TULE</a></li><li><a href="http://tuletaxi.com/contact-us-on-mobile/">Contact Us</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // Global InAppBrowser reference
+    var iabRef = null;
+    // Inject our custom JavaScript into the InAppBrowser window
+    //
+    // function replaceHeaderImage() {
+     //    iabRef.executeScript({
+     //        code: "var img=document.querySelector('#header img'); img.src='icon.png';"
+     //    }, function() {
+     //        alert("Tell your friends about us! Press OK to Continue");
+     //    });
+    // }
+    // function iabClose(event) {
+    //      iabRef.removeEventListener('loadstop', replaceHeaderImage);
+    //      iabRef.removeEventListener('exit', iabClose);
+   //  }
+    // device APIs are available
+    //
+    function onDeviceReady() {
+         iabRef = window.open('http://www.booking.tuletaxi.com/', '_blank', 'location=yes');
+         iabRef.addEventListener('loadstop', replaceHeaderImage);
+         iabRef.addEventListener('exit', iabClose);
+    }
+    </script>
+  </head>
+  <body>
+	<p>Be patient while the server loads screen.</p> 
+	<p>You need to be connected to the internet to view contents on this screen</p>
+  </body>
 </html>
