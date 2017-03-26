@@ -4,9 +4,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.KpieTechnologiesApp.Tule"
-        version   = "1.4.1">
+        version   = "1.4.2">
 
-    <name>TuleTaxi</name>
+    <name>Tule Taxi</name>
 
     <description>
         Tule connects you to safe, reliable rides from professional drivers; with the tap of a button, 
